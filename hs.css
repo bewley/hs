@@ -1,55 +1,53 @@
-/* This just a default width */
+/* Banner */
+#header {
+  height: 50px;
+  background: #1d1e21;  
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
 
+.banner {
+  height: 50px;
+  background: #1d1e21;  
+  width: 100%;
+  top: 0px;    
+  z-index: 899;
+}
+
+.logo {
+    width: 150px; 
+    padding: 15px;
+}
+
+@media (max-width: 740px) {
+  #richEditor > div.DraftEditor-root > div > div > div > figure.customHTML.customHTML-fullWidth.entity--1.alignment--left.paperform__page.paperform__page--0 {
+    padding: 0px 0px !important;
+    padding-bottom: 0px;
+  }
+}
+
+/* Remove page top padding */
 #richEditor {
     padding-top: 0px !important;
 }
 
-textarea.LiveField__input[rows] {
-border-bottom-color: rgba(230,230,230,0.8);
-}
-
-.Choices__choice.btn-default {
-     background-color: transparent;
-     color: #fff;
-}
-
-.Product__imgthumb {
-    border-radius: 50%;
-}
-
-label.Product__imgthumb > i {
-    visibility: hidden;
-}
-
-#richEditor > div.Pagination {
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.Pagination__btn {
-    width: 100%; 
-}
-
-:first-child.Pagination__btn.btn-raised:last-child {
-      border-radius: 0px !important;
-      height: 60px;
-        width: 100%;  
-}
-
-.Pagination__btn.btn-raised.Pagination__btn--next {
-      border-radius: 0px !important;
-      text-align: center;
-      height: 60px;   
-      width: 100%;  
-}
-
-.Pagination__btn--previous {
-    visibility: hidden;
-}
-
+/* Remove footer */
 .__loaded .Footer {
     visibility: hidden;
+}
+
+/* Front Page */
+
+/* About Image */
+.aboutimg {
+  width: 450px;
+}
+
+@media (max-width: 740px) {
+  .aboutimg {
+    width: 90%;
+  }
 }
 
 /* Modal */
@@ -97,6 +95,7 @@ label.Product__imgthumb > i {
 @media (max-width: 740px) {
   .modal .modal_content {
     width: 80%;
+    }
 }
 
 .modal .modal_content > h2 {
@@ -106,7 +105,7 @@ label.Product__imgthumb > i {
   text-align: center;
 }
 
-.modal .modal_content > ol {
+.modal .modal_content > ol > li {
   text-align: left;
 }
 
@@ -126,40 +125,52 @@ label.Product__imgthumb > i {
   opacity: 0.9;
 }
 
-#header {
-  height: 50px;
-  background: #1d1e21;  
-  width: 100%;
-  position: fixed;
-  top: 0px;
+/* Add bottom border to last page */
+textarea.LiveField__input[rows] {
+border-bottom-color: rgba(230,230,230,0.8);
 }
 
-.banner {
-  height: 50px;
-  background: #1d1e21;  
-  width: 100%;
-  top: 0px;    
-  z-index: 899;
+/* Button */
+#richEditor > div.Pagination {
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.logo {
-    width: 150px; 
-    padding: 15px;
+.Pagination__btn {
+    width: 100%; 
 }
 
-@media (max-width: 740px) {
-  #richEditor > div.DraftEditor-root > div > div > div > figure.customHTML.customHTML-fullWidth.entity--1.alignment--left.paperform__page.paperform__page--0 {
-    padding: 0px 0px !important;
-    padding-bottom: 0px;
-  }
+:first-child.Pagination__btn.btn-raised:last-child {
+      border-radius: 0px !important;
+      height: 60px;
+        width: 100%;  
 }
 
-.aboutimg {
-  width: 450px;
+.Pagination__btn.btn-raised.Pagination__btn--next {
+      border-radius: 0px !important;
+      text-align: center;
+      height: 60px;   
+      width: 100%;  
 }
 
-@media (max-width: 740px) {
-  .aboutimg {
-    width: 90%;
-  }
+.Pagination__btn--previous {
+    visibility: hidden;
+}
+
+
+/* Product page */
+
+/* Product labels */
+.Choices__choice.btn-default {
+     background-color: transparent;
+     color: #fff;
+}
+
+.Product__imgthumb {
+    border-radius: 50%;
+}
+
+label.Product__imgthumb > i {
+    visibility: hidden;
 }
